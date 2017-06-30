@@ -7,8 +7,11 @@ public abstract class Instruments{
   String type;
   String material;
 
-  public Instruments(String brand) {
+  public Instruments(String brand, String colour, String type, String material) {
     this.brand = brand;
+    this.colour = colour;
+    this.type = type;
+    this.material = material;
   }
 
   public String getBrand(){
@@ -20,11 +23,11 @@ public abstract class Instruments{
   }
 
   public String getMaterial(){
-    this.material = material;
+    return this.material = material;
   }
 
   public String getType(){
-    this.type = type;
+    return this.type = type;
   }
 
 }

@@ -1,21 +1,19 @@
 package music_shop;
 import behaviours.*;
 
-public abstract class Guitar extends Instruments implements Playable {
+public class Guitar extends Instruments implements Playable {
 
   int numberOfStrings;
 
-  public Guitar(String brand,  String colour, String type, int numberOfStrings){
-    super(brand);
-    super(colour);
-    super(type);
+  public Guitar(String brand,  String colour, String type, String material,int numberOfStrings){
+    super(brand, colour, type, material);
     this.numberOfStrings = numberOfStrings;
   }
 
   public int getnumberOfStrings(){
     return this.numberOfStrings;
   }
-  public String playable(){
+  public String play(){
     return "weeedeedlelelelbrannngggeeeeee";
   }
 }
