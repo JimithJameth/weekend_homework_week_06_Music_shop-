@@ -6,7 +6,7 @@ public class Keyboard extends Instruments implements Playable {
   int numberOfKeys;
   int price;
 
-  public Keyboard(String brand,  String colour, String type, String material,int numberOfkeys, int price){
+  public Keyboard(String brand,  String colour, String type, String material,int numberOfKeys, int price){
     super(brand, colour, type, material);
     this.numberOfKeys = numberOfKeys;
     this.price = price;

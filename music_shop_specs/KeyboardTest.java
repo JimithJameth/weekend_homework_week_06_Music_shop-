@@ -27,6 +27,16 @@ public class KeyboardTest {
     assertEquals("Dx7", keyboard.getType());
   }
 
+  @Test
+  public void hasMaterial(){
+    assertEquals("Hard Plastic", keyboard.getMaterial());
+  }
+
+  @Test
+  public void numberOfKeys(){
+    assertEquals(61, keyboard.getnumberOfKeys());
+  }
+
 
 
 
