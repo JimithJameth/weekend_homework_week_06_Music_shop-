@@ -16,4 +16,9 @@ public class GuitarTest {
   public void hasBrand(){
     assertEquals("Fender", guitar.getBrand()); 
   }
+
+  @Test 
+  public void hasColour(){
+    assertEquals("SeafoamGreen" , guitar.getColour());
+  }
 }
