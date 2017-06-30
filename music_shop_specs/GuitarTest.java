@@ -21,4 +21,9 @@ public class GuitarTest {
   public void hasColour(){
     assertEquals("SeafoamGreen" , guitar.getColour());
   }
+
+  @Test
+  public void hasType(){
+    assertEquals("Stratocaster" , guitar.getType());
+  }
 }
