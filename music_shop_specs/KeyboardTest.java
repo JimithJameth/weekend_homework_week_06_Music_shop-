@@ -16,4 +16,14 @@ public class KeyboardTest {
   public void hasBrand(){
     assertEquals("Yamaha", keyboard.getBrand()); 
   }
+
+  @Test 
+  public void hasColour(){
+    assertEquals("Black", keyboard.getColour());
+  }
+
+
+
+
+
 }
