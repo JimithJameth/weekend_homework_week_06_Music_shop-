@@ -42,6 +42,12 @@ public class KeyboardTest {
     assertEquals(300, keyboard.getprice());
   }
 
+  @Test
+  public void canplay(){
+    assertEquals("plays Crockett's Theme in an 80's pre-set", keyboard.play());
+  }
+
+
 
 
 
