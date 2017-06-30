@@ -27,7 +27,13 @@ public class GuitarTest {
     assertEquals("Stratocaster" , guitar.getType());
   }
 
-  @Test void hasMaterial(){
+  @Test 
+  public void hasMaterial(){
     assertEquals("Alder" , guitar.getMaterial());
+  }
+
+  @Test 
+  public void canPlay(){
+    assertEquals("weeedeedlelelelbrannngggeeeeee", guitar.play());
   }
 }
