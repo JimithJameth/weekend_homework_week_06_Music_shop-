@@ -37,6 +37,11 @@ public class KeyboardTest {
     assertEquals(61, keyboard.getnumberOfKeys());
   }
 
+  @Test
+  public void price(){
+    assertEquals(300, keyboard.getprice());
+  }
+
 
 
 
