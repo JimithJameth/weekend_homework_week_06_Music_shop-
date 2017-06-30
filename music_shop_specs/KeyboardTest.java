@@ -22,6 +22,11 @@ public class KeyboardTest {
     assertEquals("Black", keyboard.getColour());
   }
 
+  @Test
+  public void hasType(){
+    assertEquals("Dx7", keyboard.getType());
+  }
+
 
 
 
