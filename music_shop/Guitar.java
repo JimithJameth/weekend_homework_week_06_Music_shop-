@@ -4,11 +4,12 @@ import behaviours.*;
 public class Guitar extends Instruments implements Playable {
 
   int numberOfStrings;
+  int price;
 
   public Guitar(String brand,  String colour, String type, String material,int numberOfStrings, int price){
     super(brand, colour, type, material);
     this.numberOfStrings = numberOfStrings;
-    // this.price = price;
+    this.price = price;
   }
 
   public int getnumberOfStrings(){
@@ -18,7 +19,7 @@ public class Guitar extends Instruments implements Playable {
     return "weeedeedlelelelbrannngggeeeeee";
   }
 
-  // public int getPrice(){
-  //   return this.price;
-  // }
+  public int getprice(){
+    return this.price;
+  }
 }

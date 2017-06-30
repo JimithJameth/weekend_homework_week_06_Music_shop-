@@ -42,5 +42,9 @@ public class GuitarTest {
     assertEquals(6 ,guitar.getnumberOfStrings());
   }
 
+  @Test
+  public void price(){
+    assertEquals(500,guitar.getprice());
+  }
   
 }
