@@ -26,4 +26,8 @@ public class GuitarTest {
   public void hasType(){
     assertEquals("Stratocaster" , guitar.getType());
   }
+
+  @Test void hasMaterial(){
+    assertEquals("Alder" , guitar.getMaterial());
+  }
 }
