@@ -22,4 +22,9 @@ public class GuitarStringsTest {
   public void hasType(){
     assertEquals("Electric Guitar Strings", guitarStrings.getType());
   }
+
+  @Test
+  public void hasBuyingPrice(){
+    assertEquals(3.00, guitarStrings.getbuyingPrice(),.01);
+  }
 }
