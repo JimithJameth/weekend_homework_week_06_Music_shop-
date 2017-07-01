@@ -9,5 +9,12 @@ public class GuitarStringsTest {
   @Before
 
   public void before(){
-  guitarStrings = new GuitarStrings("Ernie Ball - Gaugues .010 - 0.46","Electric Guitar Strings",3.00,6.00) 
+  guitarStrings = new GuitarStrings("Ernie Ball - Gaugues .010 - 0.46","Electric Guitar Strings",3.00,6.00,3.00); 
   }
+
+  @Test
+  public void hasBrand(){
+    assertEquals("Ernie Ball", guitarStrings.getBrand());  
+
+  }
+}
