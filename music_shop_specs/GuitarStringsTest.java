@@ -19,5 +19,7 @@ public class GuitarStringsTest {
   }
 
   @Test
-  public void 
+  public void hasType(){
+    assertEquals("Electric Guitar Strings", guitarStrings.getType());
+  }
 }
