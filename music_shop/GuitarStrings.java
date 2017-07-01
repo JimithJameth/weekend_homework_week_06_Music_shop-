@@ -31,9 +31,9 @@ public class GuitarStrings implements Sellable {
     return this.type = type;
   }
 
-  public Double calculateMarkup(Double markup){
-   sellingPrice - buyingPrice/buyingPrice*100;
-    }
+  public Double calculateMarkup(double markup){
+   double markup = sellingPrice - buyingPrice/buyingPrice*100;
     return markup; 
-    }
+  }
+}
   
