@@ -25,13 +25,13 @@ public class GuitarStrings implements Sellable {
     return this.sellingPrice;
   }
   public String getBrand(){
-    return this.getBrand;
+    return this.brand;
   }
   public String getType(){
     return this.type = type;
   }
 
-  public Double calculateMarkup(double markup){
+  public Double calculateMarkup(){
    double markup = sellingPrice - buyingPrice/buyingPrice*100;
     return markup; 
   }

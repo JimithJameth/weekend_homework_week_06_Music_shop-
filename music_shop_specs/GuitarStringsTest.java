@@ -14,7 +14,10 @@ public class GuitarStringsTest {
 
   @Test
   public void hasBrand(){
-    assertEquals("Ernie Ball", guitarStrings.getBrand());  
+    assertEquals("Ernie Ball - Gaugues .010 - 0.46", guitarStrings.getBrand());  
 
   }
+
+  @Test
+  public void 
 }
