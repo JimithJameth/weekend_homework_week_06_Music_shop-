@@ -42,10 +42,10 @@ public class SaxophoneTest {
     assertEquals(1349, saxophone.getprice());
   }
 
-  // @Test
-  // public void canplay(){
-  //   assertEquals("plays Crockett's Theme in an 80's pre-set", keyboard.play());
-  // }
+  @Test
+  public void canplay(){
+    assertEquals("plays BakerStreet", saxophone.play());
+  }
 
 
 
