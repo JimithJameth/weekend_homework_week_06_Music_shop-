@@ -38,8 +38,8 @@ public class BandTshirtsTest {
     assertEquals(18.00, bandTshirts.getsellingPrice(),.01);
   }
 
-  // @Test 
-  // public void hasCalculateMarkup(){
-  //   assertEquals(10.00,guitarStrings.calculateMarkup(),.01);
-  // }
+  @Test 
+  public void hasCalculateMarkup(){
+    assertEquals(10.00,bandTshirts.calculateMarkup(),.01);
+  }
 }
