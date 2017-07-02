@@ -23,10 +23,10 @@ public class BandTshirtsTest {
     assertEquals("Jimi Hendrix Electric Lady Land", bandTshirts.getType());
   }
 
-  // @Test
-  // public void hasSize(){
-  //   assertEquals('m',bandTshirts.getSize());
-  // }
+  @Test
+  public void hasSize(){
+    assertEquals("m",bandTshirts.getSize());
+  }
 
   // @Test
   // public void hasBuyingPrice(){
