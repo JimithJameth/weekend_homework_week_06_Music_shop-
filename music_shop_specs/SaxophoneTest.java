@@ -37,10 +37,10 @@ public class SaxophoneTest {
     assertEquals(23, saxophone.getnumberOfKeys());
   }
 
-  // @Test
-  // public void price(){
-  //   assertEquals(300, keyboard.getprice());
-  // }
+  @Test
+  public void price(){
+    assertEquals(1349, saxophone.getprice());
+  }
 
   // @Test
   // public void canplay(){
