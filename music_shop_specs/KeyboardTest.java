@@ -9,7 +9,7 @@ public class KeyboardTest {
   @Before
 
   public void before(){
-    keyboard = new Keyboard("Yamaha","Black","Dx7","Hard Plastic",61,300.00,450.00);
+    keyboard = new Keyboard("Yamaha","Black","Dx7","Hard Plastic",61,300.00,450.00,150.00);
   }
 
   @Test

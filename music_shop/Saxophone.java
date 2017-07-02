@@ -1,7 +1,7 @@
 package music_shop;
 import behaviours.*;
 
-public class Saxophone extends Instruments implements Playable {
+public class Saxophone extends Instruments implements Playable,Sellable {
 
   int numberOfKeys;
   Double buyingPrice;

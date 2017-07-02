@@ -1,19 +1,20 @@
 package music_shop;
 import behaviours.*;
 
-public class Keyboard extends Instruments implements Playable {
+public class Keyboard extends Instruments implements Playable,Sellable {
 
   int numberOfKeys;
   Double buyingPrice;
   Double sellingPrice;
   Double calculateMarkup;
 
-  public Keyboard(String brand,  String colour, String type, String material,int numberOfKeys, Double buyingPrice, Double sellingPrice){
+  public Keyboard(String brand,  String colour, String type, String material,int numberOfKeys, Double buyingPrice, Double sellingPrice, Double calculateMarkup){
 
     super(brand, colour, type, material);
     this.numberOfKeys = numberOfKeys;
     this.buyingPrice = buyingPrice;
     this.sellingPrice = sellingPrice;
+    this.calculateMarkup = calculateMarkup;
   }
 
   public int getnumberOfKeys(){
