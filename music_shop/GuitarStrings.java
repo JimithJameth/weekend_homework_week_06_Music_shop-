@@ -32,7 +32,7 @@ public class GuitarStrings implements Sellable {
   }
 
   public Double calculateMarkup(){
-   double markup = sellingPrice - buyingPrice/buyingPrice*100;
+   double markup = sellingPrice - buyingPrice;
     return markup; 
   }
 }
