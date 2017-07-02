@@ -15,6 +15,7 @@ public class GuitarStrings implements Sellable {
     this.type = type;
     this.buyingPrice = buyingPrice;
     this.sellingPrice = sellingPrice;
+    this.calculateMarkup = calculateMarkup;
   }
 
   public Double getbuyingPrice(){
