@@ -22,10 +22,10 @@ public class SaxophoneTest {
     assertEquals("Gold lacquer", saxophone.getColour());
   }
 
-  // @Test
-  // public void hasType(){
-  //   assertEquals("Dx7", keyboard.getType());
-  // }
+  @Test
+  public void hasType(){
+    assertEquals("Alto", saxophone.getType());
+  }
 
   // @Test
   // public void hasMaterial(){
