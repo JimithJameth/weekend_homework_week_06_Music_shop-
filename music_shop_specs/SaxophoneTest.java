@@ -17,10 +17,10 @@ public class SaxophoneTest {
     assertEquals("Selmer", saxophone.getBrand()); 
   }
 
-  // @Test 
-  // public void hasColour(){
-  //   assertEquals("Black", keyboard.getColour());
-  // }
+  @Test 
+  public void hasColour(){
+    assertEquals("Gold lacquer", saxophone.getColour());
+  }
 
   // @Test
   // public void hasType(){
