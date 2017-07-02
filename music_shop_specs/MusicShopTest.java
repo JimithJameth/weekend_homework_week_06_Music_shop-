@@ -23,4 +23,20 @@ public class MusicShopTest {
   public void musicShopName(){
     assertEquals("The Musical Box",musicShop.getName());
   }
+
+  @Test
+  public void addingStock() {
+    shopInventory.addStock(guitar);
+    assertEquals(1, shopInventory.stockCount());
+  }
+
+  @Test
+  public void removeStock() {
+    shopInventory.addStock(guitar);
+    shopInventory.addStock(saxophone);
+    shopInventory.addStock(bandTshirts);
+    shopInventory.removeStock(guitar);
+    assertEquals(2,shopInventory.stockCount());
+
+  }
 }
