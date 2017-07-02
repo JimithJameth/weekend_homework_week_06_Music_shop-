@@ -8,10 +8,10 @@ public class Saxophone extends Instruments implements Playable,Sellable {
   Double sellingPrice;
   Double calculateMarkup;
 
-  public Saxophone(String brand,  String colour, String type, String material,int numberOfKeys, Double buyingprice, Double sellingPrice, Double calculateMarkup){
+  public Saxophone(String brand,  String colour, String type, String material,int numberOfKeys, Double buyingPrice, Double sellingPrice, Double calculateMarkup){
     super(brand, colour, type, material);
     this.numberOfKeys = numberOfKeys;
-    this.buyingPrice = buyingprice;
+    this.buyingPrice = buyingPrice;
     this.sellingPrice = sellingPrice;
   }
 

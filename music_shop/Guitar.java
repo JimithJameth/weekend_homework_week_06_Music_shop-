@@ -8,7 +8,7 @@ public class Guitar extends Instruments implements Playable,Sellable {
   Double sellingPrice;
   Double calculateMarkup;
 
-  public Guitar(String brand,  String colour, String type, String material,int numberOfStrings, Double buyingprice, Double sellingPrice, Double calculateMarkup){
+  public Guitar(String brand,  String colour, String type, String material,int numberOfStrings, Double buyingPrice, Double sellingPrice, Double calculateMarkup){
     super(brand, colour, type, material);
     this.numberOfStrings = numberOfStrings;
     this.buyingPrice = buyingPrice;
