@@ -37,12 +37,14 @@ public class SaxophoneTest {
     assertEquals(23, saxophone.getnumberOfKeys());
   }
 
-  public Double getbuyingPrice(){
-    assertEquals(800 ,saxophone.buyingPrice);
+  @Test
+  public void getbuyingPrice(){
+    assertEquals(800 ,saxophone.buyingPrice(),.01);
   }
 
-  public Double getsellingPrice(){
-    assertEquals(1349 ,saxophone.sellingPrice);
+  @Test
+  public void getsellingPrice(){
+    assertEquals(1349 ,saxophone.sellingPrice(),.01);
   }
 
   @Test
