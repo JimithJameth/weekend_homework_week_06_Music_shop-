@@ -5,14 +5,13 @@ import java.util.Iterator;
 
 public class MusicShop {
 
-  String name;
-  ArrayList<Sellable> shopInventory = new ArrayList<Sellable>();
-  Sellable stock;
+  private String name;
+  private ArrayList<Sellable>stock;
+
 
   public MusicShop(String name) {
     this.name = name;
-    this.shopInventory = shopInventory;
-    this.stock = stock;
+    this.inventory = new ArrayList<Sellable>();
   }
 
   public String getName(){
@@ -20,14 +19,14 @@ public class MusicShop {
   }
 
   public void addStock(Sellable stock) {
-     this.shopInventory.add(stock);
+     this.inventory.add(stock);
   }
 
   public void removeStock(Sellable stock) {
-    this.shopInventory.remove(stock);
+    this.inventory.remove(stock);
   }
 
   public int stockCount() {
-    return this.shopInventory.size();
+    return this.inventory.size();
   }
 }
