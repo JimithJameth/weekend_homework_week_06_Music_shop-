@@ -18,10 +18,10 @@ public class BandTshirtsTest {
 
   }
 
-  // @Test
-  // public void hasType(){
-  //   assertEquals("Jimi Hendrix Electric Lady Land", guitarStrings.getType());
-  // }
+  @Test
+  public void hasType(){
+    assertEquals("Jimi Hendrix Electric Lady Land", bandTshirts.getType());
+  }
 
   // @Test
   // public void hasSize(){
