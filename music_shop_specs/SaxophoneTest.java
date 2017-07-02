@@ -9,7 +9,7 @@ public class SaxophoneTest {
   @Before
 
   public void before(){
-    saxophone = new Saxophone("Selmer","Gold lacquer","Alto","Brass & Bronze",23,1349);
+    saxophone = new Saxophone("Selmer","Gold lacquer","Alto","Brass & Bronze",23,1349,800,549);
   }
 
   @Test
@@ -37,19 +37,21 @@ public class SaxophoneTest {
     assertEquals(23, saxophone.getnumberOfKeys());
   }
 
-  @Test
-  public void price(){
-    assertEquals(1349, saxophone.getprice());
+  public Double getbuyingPrice(){
+    assertEquals(800 ,saxophone.buyingPrice);
+  }
+
+  public Double getsellingPrice(){
+    assertEquals(1349 ,saxophone.sellingPrice);
   }
 
   @Test
   public void canplay(){
     assertEquals("plays BakerStreet", saxophone.play());
   }
-
-
-
-
-
-
+  @Test
+  public void hasCalculateMarkup(){
+      assertEquals(549,saxophone.calculateMarkup(),.01);
+  }
 }
+

@@ -4,12 +4,15 @@ import behaviours.*;
 public class Keyboard extends Instruments implements Playable {
 
   int numberOfKeys;
-  int price;
+  double buyingPrice;
+  double sellingPrice;
 
-  public Keyboard(String brand,  String colour, String type, String material,int numberOfKeys, int price){
+  public Keyboard(String brand,  String colour, String type, String material,int numberOfKeys, Double buyingPrice, Double sellingPrice){
+    
     super(brand, colour, type, material);
     this.numberOfKeys = numberOfKeys;
-    this.price = price;
+    this.buyingPrice = buyingPrice;
+    this.sellingPrice = sellingPrice;
   }
 
   public int getnumberOfKeys(){
@@ -19,7 +22,16 @@ public class Keyboard extends Instruments implements Playable {
     return "plays Crockett's Theme in an 80's pre-set";//ting na ning daaa ninggg daa ninggg//
   }
 
-  public int getprice(){
-    return this.price;
+  public Double getbuyingPrice(){
+    return this.buyingPrice;
   }
+
+  public Double getsellingPrice(){
+    return this.sellingPrice;
+  }
+
+  public Double calculateMarkup(){
+   double markup = sellingPrice - buyingPrice;
+   return markup; 
+ }
 }
