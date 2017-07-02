@@ -32,10 +32,10 @@ public class SaxophoneTest {
     assertEquals("Brass & Bronze", saxophone.getMaterial());
   }
 
-  // @Test
-  // public void numberOfKeys(){
-  //   assertEquals(61, keyboard.getnumberOfKeys());
-  // }
+  @Test
+  public void numberOfKeys(){
+    assertEquals(23, saxophone.getnumberOfKeys());
+  }
 
   // @Test
   // public void price(){
