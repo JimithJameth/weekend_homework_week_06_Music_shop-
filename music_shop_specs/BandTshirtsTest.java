@@ -28,10 +28,10 @@ public class BandTshirtsTest {
     assertEquals("m",bandTshirts.getSize());
   }
 
-  // @Test
-  // public void hasBuyingPrice(){
-  //   assertEquals(8.00, guitarStrings.getbuyingPrice(),.01);
-  // }
+  @Test
+  public void hasBuyingPrice(){
+    assertEquals(8.00, bandTshirts.getbuyingPrice(),.01);
+  }
 
   // @Test
   // public void hasSellingPrice(){
