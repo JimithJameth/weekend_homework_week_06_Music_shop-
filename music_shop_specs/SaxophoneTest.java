@@ -9,7 +9,7 @@ public class SaxophoneTest {
   @Before
 
   public void before(){
-    saxophone = new Saxophone("Selmer","Gold lacquer","Alto","Brass & Bronze",23,1349,800,549);
+    saxophone = new Saxophone("Selmer","Gold lacquer","Alto","Brass & Bronze",23,800.00,1349.00,549.00);
   }
 
   @Test
@@ -39,12 +39,12 @@ public class SaxophoneTest {
 
   @Test
   public void getbuyingPrice(){
-    assertEquals(800 ,saxophone.buyingPrice(),.01);
+    assertEquals(800 ,saxophone.getbuyingPrice(),.01);
   }
 
   @Test
   public void getsellingPrice(){
-    assertEquals(1349 ,saxophone.sellingPrice(),.01);
+    assertEquals(1349 ,saxophone.getsellingPrice(),.01);
   }
 
   @Test

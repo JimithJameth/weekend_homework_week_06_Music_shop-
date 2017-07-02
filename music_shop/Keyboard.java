@@ -4,11 +4,12 @@ import behaviours.*;
 public class Keyboard extends Instruments implements Playable {
 
   int numberOfKeys;
-  double buyingPrice;
-  double sellingPrice;
+  Double buyingPrice;
+  Double sellingPrice;
+  Double calculateMarkup;
 
   public Keyboard(String brand,  String colour, String type, String material,int numberOfKeys, Double buyingPrice, Double sellingPrice){
-    
+
     super(brand, colour, type, material);
     this.numberOfKeys = numberOfKeys;
     this.buyingPrice = buyingPrice;

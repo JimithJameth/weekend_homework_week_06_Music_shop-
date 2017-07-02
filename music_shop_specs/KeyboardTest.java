@@ -9,7 +9,7 @@ public class KeyboardTest {
   @Before
 
   public void before(){
-    keyboard = new Keyboard("Yamaha","Black","Dx7","Hard Plastic",61,300,450);
+    keyboard = new Keyboard("Yamaha","Black","Dx7","Hard Plastic",61,300.00,450.00);
   }
 
   @Test
@@ -38,13 +38,12 @@ public class KeyboardTest {
   }
   @Test
   public void getbuyingPrice(){
-      assertEquals(300 ,keyboard.buyingPrice(),.01);
+    assertEquals(300 ,keyboard.getbuyingPrice(),.01);
     }
   @Test
   public void getsellingPrice(){
-      assertEquals(450 ,keyboard.sellingPrice(),.01);
+      assertEquals(450 ,keyboard.getsellingPrice(),.01);
     }
-
   @Test
   public void canplay(){
     assertEquals("plays Crockett's Theme in an 80's pre-set", keyboard.play());
