@@ -22,17 +22,17 @@ public class Guitar extends Instruments implements Playable,Sellable {
   public String play(){
     return "weeedeedlelelelbrannngggeeeeee";
   }
-   public Double getbuyingPrice(){
-     return this.buyingPrice;
-   }
+  public Double getbuyingPrice(){
+   return this.buyingPrice;
+ }
 
-   public Double getsellingPrice(){
-     return this.sellingPrice;
-   }
+ public Double getsellingPrice(){
+   return this.sellingPrice;
+ }
 
-   public Double calculateMarkup(){
-    double markup = sellingPrice - buyingPrice;
-    return markup; 
-  }
-  
+ public Double calculateMarkup(){
+  double markup = sellingPrice - buyingPrice;
+  return markup; 
+}
+
 }
