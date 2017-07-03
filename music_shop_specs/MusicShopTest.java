@@ -26,17 +26,17 @@ public void musicShopName(){
 
 @Test
 public void canAddStock() {
-  inventory.addStock(guitar);
-  assertEquals(1, inventory.stockCount());
+  musicShop.addStock(guitar);
+  assertEquals(1, musicShop.stockCount());
 }
 
 @Test
 public void canRemoveStock() {
-  inventory.addStock(guitar);
-  inventory.addStock(saxophone);
-  inventory.addStock(bandTshirts);
-  inventory.removeStock(guitar);
-  assertEquals(2,inventory.stockCount());
+  musicShop.addStock(guitar);
+  musicShop.addStock(saxophone);
+  musicShop.addStock(bandTshirts);
+  musicShop.removeStock(guitar);
+  assertEquals(2,musicShop.stockCount());
 
 }
 }
